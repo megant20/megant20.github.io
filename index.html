@@ -9,31 +9,31 @@
 
 <head>
   <style>
+    html {
+      height: 100%;
+    }
     body {
+      height: 100%;
       margin: 0;
+      padding: 0;
       backround-color: #fff4e6;
+    }
+
+    .mid h1, h2, h3 {
+      color: #854442;
     }
 
     a {
       text-decoration: none;
     }
 
-    h1, h2, h3 {
-      color: #3c2f2f;
-    }
-
-    ul {
+    .nbar ul {
       list-style-type: none;
-      margin: 1%;
       padding: 0;
       overflow: hidden;
     }
 
-    li {
-      border-radius: 5%;
-    }
-
-    li a {
+    .nbar li a {
       display: block;
       text-align: center;
       padding: 2vh;
@@ -41,13 +41,36 @@
       color: #4b3832;
     }
 
-    footer p {
-      color: #3c2f2f;
+    footer {
+      padding-top: 1%;
+      bottom: 0;
+      margin: 0;
+      background-color: #3c2f2f;
+    }
+
+    footer ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    footer li {
+      border: 2px solid #3c2f2f;
+      border-radius: 20%;
+    }
+
+    footer li:hover {
+      border-color: #fff4e6;
     }
 
     ul.nav a:hover {
-      background-color: #be9b7b;
       color: #fff4e6;
+    }
+
+    .projects h2 {
+      color: #4b3832;
     }
 
     .projects a {
@@ -62,13 +85,31 @@
       padding: 0;
     }
 
+    .mid {
+      padding-top:5%;
+      padding-bottom: 5%;
+      height: 100%;
+    }
+
+    .nbar {
+      margin: 0;
+      background-color: #be9b7b;
+    }
+
     .homepage {
-      background-size: 100% 100%;
-      padding-top: 20%;
-      padding-bottom: 25%;
+      border: 5px solid #4b3832;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 12%;
+      margin-bottom: 12%;
+      max-width: 500px;
+      border-radius: 5%;
+      padding-top: 10%;
+      padding-bottom: 10%;
     }
 
     .left {
+      background-color: #854442;
       color: rgb(54, 70, 81);
       float: left;
     }
@@ -80,6 +121,7 @@
     }
 
     .nav {
+      margin: 0;
       padding: 0;
     }
 
@@ -98,41 +140,34 @@
       width: 50%;
     }
 
-    .sctn {
-      border: rounded;
-    }
-
 
 
 
 
 
   </style>
+  <title>Megan Tucker</title>
 </head>
 <body>
-  <div>
+  <div class = "nbar">
     <ul class = "nav">
       <li class = "left"><a class = "navbutton" href="#">Megan Tucker</a></li>
       <li class = "right"><a class = "navbutton" href="https://github.com/megant20">GitHub</a></li>
       <li class = "right"><a class = "navbutton" href="mailto:tuckermegan123@gmail.com">Email me</a></li>
     </ul>
   </div>
-  <div>
+  <div class = "mid">
     <div style = "text-align: center" class = "homepage">
       <div style = "text-align: center" class = "abt col-xs-4 col-lg-4">
         <h1>Hello!</h1>
       </div>
     </div>
   </div>
-  <div class = "projects" style = "text-align: center;">
-    <h3>Projects</h3>
-    <a href = "https://ewetuyadaniel.wixsite.com/deam" target = "_blank">Pre-Pandemic, Pandemic, and Post-Pandemic Heat Changes In Houston</a>
-  </div>
 </body>
 <footer>
-  <hr />
-  <p>&copyMegan Tucker 2022<p>
-    <div style = "text-align: center;">
-      <a target = "_blank" href = "https://github.com/megant20"><img src = "images/iconmonstr-github-1.svg" /></a>
-    </div>
+  <ul>
+    <li><a href = "https://github.com/megant20"><h3>Github</h3></a></li>
+    <li><a href = "https://www.linkedin.com/in/megan-t-63751b17a/"><h3>LinkedIn</h3></a></li>
+    </ul>
+  <p style = "color: #be9b7b;">&copyMegan Tucker 2022<p>
   </footer>
