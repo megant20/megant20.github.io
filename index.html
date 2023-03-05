@@ -9,10 +9,17 @@
 
 <head>
   <style>
-    body {
-      background-size: 100% 100%;
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+    * {
+      font-family: 'Roboto Mono', monospace;
       margin: 0;
-      backround-color: #fff4e6;
+      padding: 0;
+    }
+    body {
+      background-image: url('images/bg.png');
+      background-size: 100% 100%;
+      background-color: #720404;
     }
 
     a {
@@ -20,11 +27,10 @@
     }
 
     h1, h2, h3 {
-      color: #3c2f2f;
+      color: white;
     }
 
     .top {
-      border-bottom: 2px solid #3c2f2f;
       margin-bottom: 1%;
     }
 
@@ -35,21 +41,16 @@
       overflow: hidden;
     }
 
-    .top li {
-      border-radius: 5%;
-    }
-
     .top li a {
       display: block;
       text-align: center;
       padding: 2vh;
       text-decoration: none;
-      color: #4b3832;
+      color: #cbcbcb;
     }
 
     .top ul.nav a:hover {
-      background-color: #3c2f2f;
-      color: #fff4e6;
+      color: #720404;
     }
 
     .nav li {
@@ -57,25 +58,31 @@
     }
 
     .homepage {
-      width: 50%;
+      overflow: auto;
+      width: 80%;
       background-size: 100% 100%;
       height: fit-content;
-      padding: 4%;
+      padding: 5%;
       margin: auto;
+    }
+
+    .projects img:hover {
+      width: 55vh;
     }
 
     .homepage h1 {
       display: inline;
-      font-size: 1000%;
+      font-size: 25vh;
     }
 
     .homepage p {
+      float: right;
       font-size: 150%;
     }
 
     .abt {
       overflow: auto;
-      padding: 1%;
+      padding: 2%;
       margin: auto;
       height: fit-content;
     }
@@ -84,14 +91,16 @@
       float: right;
     }
 
+    .txt p {
+      color: white;
+    }
+
     .left {
-      border: 1px solid #4b3832;
       float: left;
     }
 
 
     .right {
-      color: white;
       float: right;
     }
 
@@ -101,7 +110,7 @@
 
     .projects {
       overflow: auto;
-      padding: 4%;
+      padding: 2%;
       margin-right: 1%;
       margin-left: 1%;
       margin-bottom: 1%;
@@ -114,29 +123,57 @@
     }
 
     .projects a {
-      color: #4b3832;
+      color: #cbcbcb;
     }
 
     .projects a:hover {
-      color: #854442;
+      color: white;
     }
 
     .projects li {
       overflow: auto;
       padding: 2%;
       margin: 2%;
-      border: 2px solid #3c2f2f;
+      border: 2px solid #6b6b6b;
       display: inline-block;
+    }
+
+    .projects p {
+      color: white;
     }
 
     footer {
       background-size: 100% 100%;
-      background-color: #3c2f2f;
-      color: #fff4e6;
     }
 
     footer .links {
-      padding: 5%;
+      padding: 2%;
+    }
+
+    .links {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .links ul {
+      margin: 5%;
+      float: none;
+      list-style-type: none;
+    }
+
+    .links li {
+      margin: 2%;
+      display: inline;
+    }
+
+    .links a {
+      margin: 1%;
+      padding: 2vh;
+      color: #cbcbcb;
+    }
+
+    footer ul a:hover {
+      color: #fff4e6;
     }
 
     .excl {
@@ -159,7 +196,7 @@
       <li class = "right"><a class = "navbutton" href="mailto:tuckermegan123@gmail.com">Email me</a></li>
     </ul>
   </div>
-  <div>
+  <div class = "middle">
     <div class = "homepage">
       <div class = "abt">
         <div class = "helo">
@@ -171,18 +208,22 @@
       </div>
     </div>
   </div>
-  <hr />
   <div style = "text-align: center;">
     <div style = "text-align: center;" class = "projects">
     <h3>Projects</h3>
     <ul>
       <li>
         <p>Heat Change Research and Website</p>
-        <a href = "https://ewetuyadaniel.wixsite.com/deam" target = "_blank"><img class = "example" src = "images/heatchange.png" /></a>
+        <a href = "https://ewetuyadaniel.wixsite.com/deam" target = "_blank"><img class = "example" src = "images/Screheatchange.png" /></a>
       </li>
       <li>
         <p>Zoo Management System</p>
         <img class = "example" src = "images/zooproj.png" />
+      </li>
+      <li>
+        <p><i>Megan was part of a senior student software engineering team that created a new software program for my company. The team did a great job! Thank you for your help, Megan!
+</i></p>
+        <p>- Chris Meader, CEO, Co-Founder of Arcos, Inc.</p>
       </li>
       <!--<li>
         <a href = "https://ewetuyadaniel.wixsite.com/deam" target = "_blank">Pre-Pandemic, Pandemic, and Post-Pandemic Heat Changes In Houston</a>
@@ -195,9 +236,11 @@
   </div>
 </body>
 <footer>
-    <div class = "links" style = "text-align: center;">
-      <a class = "navbutton" href="mailto:tuckermegan123@gmail.com">Email me</a>
-      <a target = "_blank" href = "https://github.com/megant20"><img src = "images/iconmonstr-github-1.svg" /></a>
-      <p>&copyMegan Tucker 2022<p>
+    <div class = "links">
+      <ul>
+        <li><a class = "navbutton" href="mailto:tuckermegan123@gmail.com">Email me</a></li>
+        <li><a target = "_blank" href = "https://github.com/megant20">Github</a></li>
+      </ul>
+      <p style = "color: white;">&copyMegan Tucker 2022<p>
     </div>
   </footer>
