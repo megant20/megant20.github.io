@@ -7,6 +7,7 @@
 <!-- .(   _(   )_.'-->
 <!--'---.~_ _ _&-->
 
+<!--TODO: add discord bot, Lightning Step maybe, and description for projects-->
 <head>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
@@ -181,7 +182,17 @@
     }
 
     .example {
-      max-width: 50vh;
+      width: 50vh;
+    }
+
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    .sticky + .middle {
+      padding-top: 5%;
     }
 
 
@@ -214,11 +225,16 @@
     <ul>
       <li>
         <p>Heat Change Research and Website</p>
-        <a href = "https://ewetuyadaniel.wixsite.com/deam" target = "_blank"><img class = "example" src = "images/Screheatchange.png" /></a>
+        <a href = "https://ewetuyadaniel.wixsite.com/deam" target = "_blank"><img class = "example" src = "images/imageheat.png" /></a>
+        <p>
       </li>
       <li>
         <p>Zoo Management System</p>
-        <img class = "example" src = "images/zooproj.png" />
+        <img class = "example" src = "images/imagezoo.png" />
+      </li>
+      <li>
+        <p>Chat/Hangman Bot for Discord</p>
+        <img class = "example" src = "images/discordbot.png" />
       </li>
       <li>
         <p><i>Megan was part of a senior student software engineering team that created a new software program for my company. The team did a great job! Thank you for your help, Megan!
@@ -234,12 +250,27 @@
     </ul>
     </div>
   </div>
+  <script>
+    window.onscroll = function() {myFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+</script>
 </body>
 <footer>
     <div class = "links">
       <ul>
         <li><a class = "navbutton" href="mailto:tuckermegan123@gmail.com">Email me</a></li>
         <li><a target = "_blank" href = "https://github.com/megant20">Github</a></li>
+        <li><a target = "_blank" href = "https://www.linkedin.com/in/megan-t-63751b17a/">LinkedIn</a></li>
       </ul>
       <p style = "color: white;">&copyMegan Tucker 2022<p>
     </div>
